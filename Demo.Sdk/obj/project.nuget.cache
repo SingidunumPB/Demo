@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "0mlcyW4KdYp2QIWdUSSCWPSLcnZJr6pR+rH4W1xcwCdJpjMzVxvpWaPejDWa8T49om0DDj1QlJbQQWyZbsivVA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\petar\\Desktop\\Demo\\Demo\\Demo.Sdk\\Demo.Sdk.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\petar\\.nuget\\packages\\refit\\7.0.0\\refit.7.0.0.nupkg.sha512",
+    "C:\\Users\\petar\\.nuget\\packages\\system.net.http.json\\7.0.1\\system.net.http.json.7.0.1.nupkg.sha512",
+    "C:\\Users\\petar\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\petar\\.nuget\\packages\\system.text.json\\7.0.3\\system.text.json.7.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,15 @@
+C:\Users\petar\Desktop\Demo\Demo\Demo.Application\bin\Debug\net8.0\Demo.Application.deps.json
+C:\Users\petar\Desktop\Demo\Demo\Demo.Application\bin\Debug\net8.0\Demo.Application.dll
+C:\Users\petar\Desktop\Demo\Demo\Demo.Application\bin\Debug\net8.0\Demo.Application.pdb
+C:\Users\petar\Desktop\Demo\Demo\Demo.Application\obj\Debug\net8.0\Demo.Application.csproj.AssemblyReference.cache
+C:\Users\petar\Desktop\Demo\Demo\Demo.Application\obj\Debug\net8.0\Demo.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\petar\Desktop\Demo\Demo\Demo.Application\obj\Debug\net8.0\Demo.Application.AssemblyInfoInputs.cache
+C:\Users\petar\Desktop\Demo\Demo\Demo.Application\obj\Debug\net8.0\Demo.Application.AssemblyInfo.cs
+C:\Users\petar\Desktop\Demo\Demo\Demo.Application\obj\Debug\net8.0\Demo.Application.csproj.CoreCompileInputs.cache
+C:\Users\petar\Desktop\Demo\Demo\Demo.Application\obj\Debug\net8.0\Demo.Application.dll
+C:\Users\petar\Desktop\Demo\Demo\Demo.Application\obj\Debug\net8.0\refint\Demo.Application.dll
+C:\Users\petar\Desktop\Demo\Demo\Demo.Application\obj\Debug\net8.0\Demo.Application.pdb
+C:\Users\petar\Desktop\Demo\Demo\Demo.Application\obj\Debug\net8.0\ref\Demo.Application.dll
+C:\Users\petar\Desktop\Demo\Demo\Demo.Application\bin\Debug\net8.0\Demo.Domain.dll
+C:\Users\petar\Desktop\Demo\Demo\Demo.Application\bin\Debug\net8.0\Demo.Domain.pdb
+C:\Users\petar\Desktop\Demo\Demo\Demo.Application\obj\Debug\net8.0\Demo.App.371CD7EF.Up2Date
