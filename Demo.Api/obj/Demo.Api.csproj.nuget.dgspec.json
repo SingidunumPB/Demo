@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\petar\\Desktop\\Demo\\Demo\\Demo.Api\\Demo.Api.csproj": {}
+    "C:\\Users\\petar\\Documents\\GitHub\\Demo\\Demo.Api\\Demo.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\petar\\Desktop\\Demo\\Demo\\Demo.Api\\Demo.Api.csproj": {
+    "C:\\Users\\petar\\Documents\\GitHub\\Demo\\Demo.Api\\Demo.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\petar\\Desktop\\Demo\\Demo\\Demo.Api\\Demo.Api.csproj",
+        "projectUniqueName": "C:\\Users\\petar\\Documents\\GitHub\\Demo\\Demo.Api\\Demo.Api.csproj",
         "projectName": "Demo.Api",
-        "projectPath": "C:\\Users\\petar\\Desktop\\Demo\\Demo\\Demo.Api\\Demo.Api.csproj",
+        "projectPath": "C:\\Users\\petar\\Documents\\GitHub\\Demo\\Demo.Api\\Demo.Api.csproj",
         "packagesPath": "C:\\Users\\petar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\petar\\Desktop\\Demo\\Demo\\Demo.Api\\obj\\",
+        "outputPath": "C:\\Users\\petar\\Documents\\GitHub\\Demo\\Demo.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\petar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,16 +22,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\petar\\Desktop\\Sdks": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.pkg.github.com/Simpel-Transport/index.json": {}
+          "C:\\Users\\petar\\Desktop\\DemoSdks": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\petar\\Desktop\\Demo\\Demo\\Demo.Infrastructure\\Demo.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\petar\\Desktop\\Demo\\Demo\\Demo.Infrastructure\\Demo.Infrastructure.csproj"
+              "C:\\Users\\petar\\Documents\\GitHub\\Demo\\Demo.Infrastructure\\Demo.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\petar\\Documents\\GitHub\\Demo\\Demo.Infrastructure\\Demo.Infrastructure.csproj"
               }
             }
           }
@@ -78,14 +77,14 @@
         }
       }
     },
-    "C:\\Users\\petar\\Desktop\\Demo\\Demo\\Demo.Application\\Demo.Application.csproj": {
+    "C:\\Users\\petar\\Documents\\GitHub\\Demo\\Demo.Application\\Demo.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\petar\\Desktop\\Demo\\Demo\\Demo.Application\\Demo.Application.csproj",
+        "projectUniqueName": "C:\\Users\\petar\\Documents\\GitHub\\Demo\\Demo.Application\\Demo.Application.csproj",
         "projectName": "Demo.Application",
-        "projectPath": "C:\\Users\\petar\\Desktop\\Demo\\Demo\\Demo.Application\\Demo.Application.csproj",
+        "projectPath": "C:\\Users\\petar\\Documents\\GitHub\\Demo\\Demo.Application\\Demo.Application.csproj",
         "packagesPath": "C:\\Users\\petar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\petar\\Desktop\\Demo\\Demo\\Demo.Application\\obj\\",
+        "outputPath": "C:\\Users\\petar\\Documents\\GitHub\\Demo\\Demo.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\petar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -96,16 +95,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\petar\\Desktop\\Sdks": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.pkg.github.com/Simpel-Transport/index.json": {}
+          "C:\\Users\\petar\\Desktop\\DemoSdks": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\petar\\Desktop\\Demo\\Demo\\Demo.Domain\\Demo.Domain.csproj": {
-                "projectPath": "C:\\Users\\petar\\Desktop\\Demo\\Demo\\Demo.Domain\\Demo.Domain.csproj"
+              "C:\\Users\\petar\\Documents\\GitHub\\Demo\\Demo.Domain\\Demo.Domain.csproj": {
+                "projectPath": "C:\\Users\\petar\\Documents\\GitHub\\Demo\\Demo.Domain\\Demo.Domain.csproj"
               }
             }
           }
@@ -173,14 +171,14 @@
         }
       }
     },
-    "C:\\Users\\petar\\Desktop\\Demo\\Demo\\Demo.Domain\\Demo.Domain.csproj": {
+    "C:\\Users\\petar\\Documents\\GitHub\\Demo\\Demo.Domain\\Demo.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\petar\\Desktop\\Demo\\Demo\\Demo.Domain\\Demo.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\petar\\Documents\\GitHub\\Demo\\Demo.Domain\\Demo.Domain.csproj",
         "projectName": "Demo.Domain",
-        "projectPath": "C:\\Users\\petar\\Desktop\\Demo\\Demo\\Demo.Domain\\Demo.Domain.csproj",
+        "projectPath": "C:\\Users\\petar\\Documents\\GitHub\\Demo\\Demo.Domain\\Demo.Domain.csproj",
         "packagesPath": "C:\\Users\\petar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\petar\\Desktop\\Demo\\Demo\\Demo.Domain\\obj\\",
+        "outputPath": "C:\\Users\\petar\\Documents\\GitHub\\Demo\\Demo.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\petar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -191,9 +189,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\petar\\Desktop\\Sdks": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.pkg.github.com/Simpel-Transport/index.json": {}
+          "C:\\Users\\petar\\Desktop\\DemoSdks": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -236,14 +233,14 @@
         }
       }
     },
-    "C:\\Users\\petar\\Desktop\\Demo\\Demo\\Demo.Infrastructure\\Demo.Infrastructure.csproj": {
+    "C:\\Users\\petar\\Documents\\GitHub\\Demo\\Demo.Infrastructure\\Demo.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\petar\\Desktop\\Demo\\Demo\\Demo.Infrastructure\\Demo.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\petar\\Documents\\GitHub\\Demo\\Demo.Infrastructure\\Demo.Infrastructure.csproj",
         "projectName": "Demo.Infrastructure",
-        "projectPath": "C:\\Users\\petar\\Desktop\\Demo\\Demo\\Demo.Infrastructure\\Demo.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\petar\\Documents\\GitHub\\Demo\\Demo.Infrastructure\\Demo.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\petar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\petar\\Desktop\\Demo\\Demo\\Demo.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\petar\\Documents\\GitHub\\Demo\\Demo.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\petar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -254,16 +251,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\petar\\Desktop\\Sdks": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.pkg.github.com/Simpel-Transport/index.json": {}
+          "C:\\Users\\petar\\Desktop\\DemoSdks": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\petar\\Desktop\\Demo\\Demo\\Demo.Application\\Demo.Application.csproj": {
-                "projectPath": "C:\\Users\\petar\\Desktop\\Demo\\Demo\\Demo.Application\\Demo.Application.csproj"
+              "C:\\Users\\petar\\Documents\\GitHub\\Demo\\Demo.Application\\Demo.Application.csproj": {
+                "projectPath": "C:\\Users\\petar\\Documents\\GitHub\\Demo\\Demo.Application\\Demo.Application.csproj"
               }
             }
           }

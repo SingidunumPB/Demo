@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9cgCRLtY5i73b8fNp2SDF9Z2Fii4lj6qFn3i05Nvu54FsverRaAbuHpplKZ9S60KxX06vabHjm6bIHS7YY0yzw==",
+  "dgSpecHash": "inXWw8VexmwBZoSlNsor1pWDeEo7RsHI36OtGyRe4blqED6W/5870quy6Hs9J4dfUXXkD8VtnEytENnzQsPZ0Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\petar\\Desktop\\Demo\\Demo\\Demo.Api\\Demo.Api.csproj",
+  "projectFilePath": "C:\\Users\\petar\\Documents\\GitHub\\Demo\\Demo.Api\\Demo.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\petar\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
     "C:\\Users\\petar\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
