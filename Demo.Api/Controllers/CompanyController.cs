@@ -24,7 +24,7 @@ public class CompanyController(IDemoDbContext dbContext) : ControllerBase
     [HttpPost("create")]
     public async Task<IActionResult> Create()
     {
-        var company = new Company(Guid.NewGuid(),
+        var company = new Company(
             "Tesla",
             "Tesla Company");
         dbContext.Companies.Add(company);

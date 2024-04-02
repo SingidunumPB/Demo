@@ -3,9 +3,9 @@
 public class Company
 {
     private Company() { }
-    public Company(Guid id, string name, string description)
+    public Company(string name, string description)
     {
-        Id = id;
+        Id = Guid.NewGuid();
         Name = name;
         Description = description;
     }
