@@ -7,11 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Builders\Commands\" />
-      <Folder Include="Builders\Dto\" />
-    </ItemGroup>
-
-    <ItemGroup>
+      <ProjectReference Include="..\Demo.Application\Demo.Application.csproj" />
       <ProjectReference Include="..\Demo.Domain\Demo.Domain.csproj" />
     </ItemGroup>
 

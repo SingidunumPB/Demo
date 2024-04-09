@@ -1,6 +1,7 @@
 ﻿using Demo.Application.Common.Interfaces;
 using Demo.Infrastructure.Configuration;
 using Demo.Infrastructure.Contexts;
+using Demo.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -19,6 +20,8 @@ public static class DependencyInjection
                 x => x.MigrationsAssembly(typeof(DemoDbContext).Assembly.FullName)));
         
         services.AddScoped<IDemoDbContext>(provider => provider.GetRequiredService<DemoDbContext>());
+        services.AddScoped<IProductService, ProductService>();
+        services.AddScoped<ICompanyService, CompanyService>();
         
         return services;
     }
