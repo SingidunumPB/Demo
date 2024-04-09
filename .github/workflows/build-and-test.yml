@@ -27,3 +27,4 @@ jobs:
         if: always()
         with:
           files: coverage/**/*.trx
+          github_token: ${{ secrets.PUBLISH_TEST_TOKEN }}
