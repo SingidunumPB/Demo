@@ -2,6 +2,7 @@
 using Demo.Application.Common.Exceptions;
 using Demo.Application.Common.Interfaces;
 using Demo.Application.Common.Mappers;
+using Demo.Domain.Enums;
 using Microsoft.EntityFrameworkCore;
 
 namespace Demo.Infrastructure.Services;

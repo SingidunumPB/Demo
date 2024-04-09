@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "znhCA0tz0xavtlRfvfTkwEq3tB7wSOU2HKAIhUpDrvCi8RzMYRnyuQRz+SVnFrdSX5jqOuO4mq8Xjs0g4ijUAw==",
+  "dgSpecHash": "ojhTnmGDOw6E1iyVo253EhnapPMzmdLjb1ZVTY+q+iu0EDkMPGHJtNAI3Y+YfYEgULi/UVKN2b3lMiagjuKSGg==",
   "success": true,
   "projectFilePath": "C:\\Users\\petar\\Documents\\GitHub\\Demo\\Demo.Application\\Demo.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\petar\\.nuget\\packages\\ardalis.smartenum\\8.0.0\\ardalis.smartenum.8.0.0.nupkg.sha512",
     "C:\\Users\\petar\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
     "C:\\Users\\petar\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
     "C:\\Users\\petar\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.0\\fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
@@ -28,7 +29,8 @@
     "C:\\Users\\petar\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\petar\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
     "C:\\Users\\petar\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
-    "C:\\Users\\petar\\.nuget\\packages\\riok.mapperly\\3.4.0\\riok.mapperly.3.4.0.nupkg.sha512"
+    "C:\\Users\\petar\\.nuget\\packages\\riok.mapperly\\3.4.0\\riok.mapperly.3.4.0.nupkg.sha512",
+    "C:\\Users\\petar\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
