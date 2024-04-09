@@ -54,7 +54,7 @@ public class ProductCreateCommandTests : BaseTests
         content.Should()
             .NotBeNull();
 
-        MockCompanyService.Verify(x => x.CreateAsync(), Times.Once);
+        MockCompanyService.Verify(x => x.CreateAsync(), Times.Never);
     }
 
     public ProductCreateCommandTests(CustomWebApplicationFactory<Program> factory) : base(factory)
