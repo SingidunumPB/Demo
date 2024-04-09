@@ -24,8 +24,13 @@ public class DemoDbContext(DbContextOptions<DemoDbContext> options)
     }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseNpgsql("Host=localhost;Username=postgres;Password=root;Database=Unis");
-    
+    {
+        if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") != "Test")
+        {
+            optionsBuilder.UseNpgsql("Host=localhost;Username=postgres;Password=root;Database=Unis");
+        }
+    }
+
     public DbSet<Product> Products => Set<Product>();
     public DbSet<Company> Companies => Set<Company>();
 
