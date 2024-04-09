@@ -10,9 +10,9 @@ on:
 jobs:
   backend-build-and-test:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      checks: write
+#    permissions:
+#      contents: write
+#      checks: write
       
     steps:
       - uses: actions/checkout@v2
@@ -25,9 +25,9 @@ jobs:
         run: dotnet build --configuration Release Demo.sln
       - name: Test
         run: dotnet test --configuration Release Demo.sln --no-build --verbosity normal --collect:"XPlat Code Coverage" --logger trx --results-directory coverage
-      - name: Publish Test Results
-        uses: EnricoMi/publish-unit-test-result-action@v2
-        if: always()
-        with:
-          files: coverage/**/*.trx
-          github_token: ${{ secrets.PUBLISH_TEST_TOKEN }}
+#      - name: Publish Test Results
+#        uses: EnricoMi/publish-unit-test-result-action@v2
+#        if: always()
+#        with:
+#          files: coverage/**/*.trx
+#          github_token: ${{ secrets.PUBLISH_TEST_TOKEN }}
