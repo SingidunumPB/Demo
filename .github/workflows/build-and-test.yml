@@ -1,0 +1,26 @@
+name: Demo App start Tests
+
+on:
+  push:
+    branches:
+      - "feature/*" # matches every feature branch containing a single '/'
+      - "!release/**" # excludes release
+
+jobs:
+  backend-build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '8.0.x'
+      - name: Build
+        run: dotnet build --configuration Release Demo.sln
+      - name: Test
+        run: dotnet test --configuration Release Demo.sln --no-build --verbosity normal --collect:"XPlat Code Coverage" --logger trx --results-directory coverage
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action@v2
+        if: always()
+        with:
+          files: coverage/**/*.trx
