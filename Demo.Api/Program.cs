@@ -2,6 +2,7 @@ using Demo.Api.Auth;
 using Demo.Api.Filters;
 using Demo.Api.Services;
 using Demo.Application;
+using Demo.Domain.Common.Extensions;
 using Demo.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);

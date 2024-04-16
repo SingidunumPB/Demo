@@ -7,6 +7,7 @@ public class ProductCreateDtoBuilder
     private Guid _companyId;
     private string _name = "-";
     private string _description = "-";
+    private int _category = 1;
 
     public ProductCreateDtoBuilder WithCompanyId(Guid companyId)
     {
@@ -26,5 +27,5 @@ public class ProductCreateDtoBuilder
         return this;
     }
 
-    public ProductCreateDto Build() => new(_companyId, _name, _description);
+    public ProductCreateDto Build() => new(_companyId, _name, _description, _category);
 }

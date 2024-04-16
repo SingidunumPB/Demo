@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "mwhCt267HAphIspq4INNToL8NpWelvUHvT4nVDoXdy9pQddpRCaCWV2t1QVc7kUtI5KPVVfk84SUOi/yjmN4xA==",
+  "dgSpecHash": "DJ9RhnuTBxGUGI6DDBHp7B1x+tk/pScSNhQjojBBkhcHx+q4gwOmd7ooaNS5HSdPGpR0c9xqlpUZ3+wn2JAJzA==",
   "success": true,
   "projectFilePath": "C:\\Users\\petar\\Documents\\GitHub\\Demo\\Demo.Api\\Demo.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\petar\\.nuget\\packages\\ardalis.guardclauses\\4.5.0\\ardalis.guardclauses.4.5.0.nupkg.sha512",
     "C:\\Users\\petar\\.nuget\\packages\\ardalis.smartenum\\8.0.0\\ardalis.smartenum.8.0.0.nupkg.sha512",
     "C:\\Users\\petar\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
     "C:\\Users\\petar\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",

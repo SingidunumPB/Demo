@@ -113,3 +113,5 @@ C:\Users\petar\Documents\GitHub\Demo\Demo.Api\obj\Debug\net8.0\refint\Demo.Api.d
 C:\Users\petar\Documents\GitHub\Demo\Demo.Api\obj\Debug\net8.0\Demo.Api.pdb
 C:\Users\petar\Documents\GitHub\Demo\Demo.Api\obj\Debug\net8.0\Demo.Api.genruntimeconfig.cache
 C:\Users\petar\Documents\GitHub\Demo\Demo.Api\obj\Debug\net8.0\ref\Demo.Api.dll
+C:\Users\petar\Documents\GitHub\Demo\Demo.Api\bin\Debug\net8.0\Ardalis.SmartEnum.dll
+C:\Users\petar\Documents\GitHub\Demo\Demo.Api\bin\Debug\net8.0\Ardalis.GuardClauses.dll

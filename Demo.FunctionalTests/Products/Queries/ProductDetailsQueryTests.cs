@@ -3,6 +3,7 @@ using System.Net.Http.Json;
 using Demo.Application.Common.Dto.Product;
 using Demo.BaseTests.Builders.Domain;
 using Demo.Domain.Entities;
+using Demo.Domain.Enums;
 using FluentAssertions;
 using FluentAssertions.Execution;
 
@@ -70,7 +71,7 @@ public class ProductDetailsQueryTests : BaseTests
         var company = new Company("-",
             "-");
         var product = new Product("-",
-            "-").AddCompany(company);
+            "-", Category.Tehnika).AddCompany(company);
 
         await DemoDbContext.Products.AddAsync(product);
         await DemoDbContext.SaveChangesAsync();
