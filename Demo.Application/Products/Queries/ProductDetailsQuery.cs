@@ -3,15 +3,17 @@ using Demo.Application.Common.Exceptions;
 using Demo.Application.Common.Extensions;
 using Demo.Application.Common.Interfaces;
 using Demo.Application.Common.Mappers;
+using Demo.Application.Configuration;
 using Demo.Domain.Common.Extensions;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 
 namespace Demo.Application.Products.Queries;
 
 public record ProductDetailsQuery(string Id) : IRequest<ProductDetailsDto>;
 
-public class ProductDetailsQueryHandler(IDemoDbContext dbContext) : IRequestHandler<ProductDetailsQuery, ProductDetailsDto>
+public class ProductDetailsQueryHandler(IDemoDbContext dbContext, IOptions<AesEncryptionConfiguration> aesConfiguration) : IRequestHandler<ProductDetailsQuery, ProductDetailsDto>
 {
     public async Task<ProductDetailsDto> Handle(ProductDetailsQuery request, CancellationToken cancellationToken)
     {
@@ -40,6 +42,11 @@ public class ProductDetailsQueryHandler(IDemoDbContext dbContext) : IRequestHand
         // if (!validateResult.IsValid)
         //     throw new ValidationException(validateResult.Errors.ToGroup());
         
+        //TEST ENCRYPT
+        var testPassword = "test123";
+        var testPassEncrypt = testPassword.Encrypt(aesConfiguration.Value.Key);
+        var testPassDecrypt = testPassEncrypt.Decrypt(aesConfiguration.Value.Key);
+
         return dto;
     }
 }

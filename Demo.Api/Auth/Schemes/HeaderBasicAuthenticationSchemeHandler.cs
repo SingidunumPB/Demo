@@ -1,7 +1,9 @@
 ﻿using System.Security.Claims;
 using System.Text.Encodings.Web;
 using Demo.Api.Auth.Options;
+using Demo.Application.Common.Extensions;
 using Demo.Application.Common.Interfaces;
+using Demo.Application.Configuration;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -11,21 +13,24 @@ namespace Demo.Api.Auth.Schemes;
 public class HeaderBasicAuthenticationSchemeHandler : AuthenticationHandler<HeaderBasicAuthenticationSchemeOptions>
 {
     private readonly IDemoDbContext _dbContext;
+    private readonly AesEncryptionConfiguration _aesEncryptionConfiguration;
     
     [Obsolete("Obsolete")]
-    public HeaderBasicAuthenticationSchemeHandler(IOptionsMonitor<HeaderBasicAuthenticationSchemeOptions> options, ILoggerFactory logger, UrlEncoder encoder, ISystemClock clock, IDemoDbContext dbContext) : base(options,
+    public HeaderBasicAuthenticationSchemeHandler(IOptionsMonitor<HeaderBasicAuthenticationSchemeOptions> options, ILoggerFactory logger, UrlEncoder encoder, ISystemClock clock, IDemoDbContext dbContext, IOptions<AesEncryptionConfiguration> aesConfiguration) : base(options,
         logger,
         encoder,
         clock)
     {
         _dbContext = dbContext;
+        _aesEncryptionConfiguration = aesConfiguration.Value;
     }
 
-    public HeaderBasicAuthenticationSchemeHandler(IOptionsMonitor<HeaderBasicAuthenticationSchemeOptions> options, ILoggerFactory logger, UrlEncoder encoder, IDemoDbContext dbContext) : base(options,
+    public HeaderBasicAuthenticationSchemeHandler(IOptionsMonitor<HeaderBasicAuthenticationSchemeOptions> options, ILoggerFactory logger, UrlEncoder encoder, IDemoDbContext dbContext, IOptions<AesEncryptionConfiguration> aesConfiguration) : base(options,
         logger,
         encoder)
     {
         _dbContext = dbContext;
+        _aesEncryptionConfiguration = aesConfiguration.Value;
     }
 
     protected override async Task<AuthenticateResult> HandleAuthenticateAsync()
@@ -38,12 +43,10 @@ public class HeaderBasicAuthenticationSchemeHandler : AuthenticationHandler<Head
             var password = Request.Headers[Options.PasswordHeader]
                     .FirstOrDefault() ??
                 throw new InvalidOperationException("Missing Username header");
-
-            var companies = await _dbContext.Companies.ToListAsync();
-
+            
             var user = Options.Users.SingleOrDefault(user => user.Username.Equals(username,
                         StringComparison.OrdinalIgnoreCase) &&
-                    user.Password.Equals(password,
+                    user.Password.Decrypt(_aesEncryptionConfiguration.Key).Equals(password,
                         StringComparison.OrdinalIgnoreCase)) ??
                 throw new InvalidOperationException("User not found");
 

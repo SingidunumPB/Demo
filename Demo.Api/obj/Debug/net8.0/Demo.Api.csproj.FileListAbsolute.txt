@@ -115,3 +115,11 @@ C:\Users\petar\Documents\GitHub\Demo\Demo.Api\obj\Debug\net8.0\Demo.Api.genrunti
 C:\Users\petar\Documents\GitHub\Demo\Demo.Api\obj\Debug\net8.0\ref\Demo.Api.dll
 C:\Users\petar\Documents\GitHub\Demo\Demo.Api\bin\Debug\net8.0\Ardalis.SmartEnum.dll
 C:\Users\petar\Documents\GitHub\Demo\Demo.Api\bin\Debug\net8.0\Ardalis.GuardClauses.dll
+C:\Users\petar\Documents\GitHub\Demo\Demo.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\petar\Documents\GitHub\Demo\Demo.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\petar\Documents\GitHub\Demo\Demo.Api\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\petar\Documents\GitHub\Demo\Demo.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\petar\Documents\GitHub\Demo\Demo.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\petar\Documents\GitHub\Demo\Demo.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\petar\Documents\GitHub\Demo\Demo.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\petar\Documents\GitHub\Demo\Demo.Api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

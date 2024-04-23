@@ -1,7 +1,11 @@
 ﻿using Demo.Application.Common.Interfaces;
+using Demo.Domain.Entities;
+using Demo.Infrastructure.Auth.Extensions;
 using Demo.Infrastructure.Configuration;
 using Demo.Infrastructure.Contexts;
+using Demo.Infrastructure.Identity;
 using Demo.Infrastructure.Services;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -22,9 +26,21 @@ public static class DependencyInjection
                     x => x.MigrationsAssembly(typeof(DemoDbContext).Assembly.FullName)));
         }
         
+        services.AddIdentity<ApplicationUser, ApplicationRole>()
+            .AddRoleManager<RoleManager<ApplicationRole>>()
+            .AddUserManager<ApplicationUserManager>()
+            .AddEntityFrameworkStores<DemoDbContext>()
+            .AddDefaultTokenProviders()
+            .AddPasswordlessLoginTokenProvider();
+        
         services.AddScoped<IDemoDbContext>(provider => provider.GetRequiredService<DemoDbContext>());
         services.AddScoped<IProductService, ProductService>();
         services.AddScoped<ICompanyService, CompanyService>();
+        services.AddScoped<IAuthService, AuthService>();
+        services.AddScoped<IUserService, UserService>();
+        services.AddScoped<IRoleService, RoleService>();
+        services.AddScoped<ICurrentUserService, CurrentUserService>();
+        services.Configure<JwtConfiguration>(configuration.GetSection("JwtConfiguration"));
         
         return services;
     }
